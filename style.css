@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightslategray;
+    
+}
+
+.container{
+   position: relative;
+   width: 100%;
+   max-width: 1000px;
+   min-height: 1000px;
+   margin: 50px;
+   background: #fff;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   box-shadow: 0 35px 55px rgba(0,0,0,0.2);
+
+}
+
+.container .left{
+    position: relative;
+    padding: 40px;
+    background: #167266;
+}
+
+.profileText{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.profileText .profileImg{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .profileImg img{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+}
+
+.profileText h2{
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.profileText span{
+    font-size: 1.0em;
+    font-weight: 600;
+    line-height: 1.4em;
+    text-align: center;
+    color: #fff;
+}
+
+.Info{
+    padding: 40px;
+}
+
+.title{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.4s;
+    margin: 20px;
+}
+
+.Info ul{
+    position: relative;
+    
+}
+
+.Info ul li{
+    position: relative;
+    display: flex;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.Info ul li i{
+    width: 30px;
+    font-size: 20px;
+    display: inline-block;
+    color: #0af6d7;
+}
+
+.Info ul li span{
+   font-weight: 200;
+    color: #fff;
+}
+
+
+.Education li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.Education h5{
+    color: #0af6d7;
+    font-weight: 500;
+}
+
+.Education h4:nth-child(2){
+    color: #0af6d7;
+    font-weight: 500; 
+}
+
+.Education h4{
+    color: #fff;
+    font-weight: 300; 
+}
+
+.Language li{
+    list-style: none;
+    font-weight: 500;
+    color: #f0f0f0;
+}
+
+.Language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    margin-top: 5px;
+    display: block;
+    background: #f0f0f0;
+}
+
+.Language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #0af6d7;
+}
+
+.container .right{
+    position: relative;
+    padding: 40px;
+    background: #fff;
+}
+
+.About{
+    margin-bottom: 50px;
+}
+
+.About:last-child{
+    margin-bottom: 0px;
+}
+
+.title2{
+    margin-bottom: 10px;
+    color: #167266;
+    text-transform: uppercase;
+}
+
+p{
+    color: #333;
+}
+
+.About{
+    margin-bottom: 50px;
+}
+
+.About .box{
+    margin: 20px 0;
+  display: flex;
+  flex-direction: row;  
+}
+
+.About .box .yearCompany{
+    min-width: 150px;
+}
+
+.About .box .yearCompany h5{
+    font-weight: 600;
+    color: #848c90;
+    text-transform: uppercase;
+}
+
+.About .box .text h4{
+    font-size: 16px;
+    color: #0af6d7;
+    text-transform: uppercase;
+}
+
+.Skills{
+    margin-bottom: 50px;
+}
+
+.Skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.Skills .box h4{
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #848c90;
+}
+
+.Skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+.Skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #0af6d7;
+}
+
+.Other{
+    margin-bottom: 50px;
+}
+
+.Other ul li{
+    display: flex;
+    list-style: none;
+    margin: 12px 0;
+    font-weight: 500;
+    color: #333;
+}
+
+.Interest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.Interest ul li{
+    display: flex;
+    list-style: none;
+    margin: 12px 0;
+    font-weight: 500;
+    color: #333;
+}
+
+.Interest ul li .icon{
+    width: 35px;
+    font-size: 18px;
+    color: #0af6d7;
+}
+
+.Signature{
+    background: #167266;
+    color: #f0f0f0;
+}
+
+
+/* Media Query */
+
+@media(max-width : 1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .Interest ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width : 600px){
+    .About .box{
+        flex-direction: column;
+
+    }
+
+    .About .box .yearCompany{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .Interest .ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .Skills .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
